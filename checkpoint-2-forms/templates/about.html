@@ -1,0 +1,72 @@
+{% extends "base.html" %}
+
+{% block title %}About - AI Content Analyzer{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-8 mx-auto">
+        <h2 class="mb-4">About Checkpoint 2</h2>
+        
+        <div class="card shadow mb-4">
+            <div class="card-body">
+                <h5 class="card-title">What's New in This Checkpoint</h5>
+                <ul>
+                    <li><strong>Form Handling:</strong> Accept user input via HTML forms</li>
+                    <li><strong>POST Requests:</strong> Handle form submissions securely</li>
+                    <li><strong>Request Object:</strong> Access form data in Flask</li>
+                    <li><strong>Conditional Rendering:</strong> Show results only after submission</li>
+                    <li><strong>Form Validation:</strong> Required fields using HTML5</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="card shadow mb-4">
+            <div class="card-body">
+                <h5 class="card-title">Key Concepts</h5>
+                
+                <h6 class="mt-3">GET vs POST</h6>
+                <div class="table-responsive">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>Method</th>
+                                <th>Purpose</th>
+                                <th>Data Visibility</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>GET</strong></td>
+                                <td>View a page</td>
+                                <td>Data in URL (visible)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>POST</strong></td>
+                                <td>Submit data</td>
+                                <td>Data in request body (hidden)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h6 class="mt-4">Form Components</h6>
+                <ul>
+                    <li><code>&lt;form method="POST"&gt;</code> - Specifies POST method</li>
+                    <li><code>&lt;input name="question"&gt;</code> - Creates form field</li>
+                    <li><code>required</code> - HTML5 validation attribute</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="alert alert-success" role="alert">
+            <h5 class="alert-heading">Next Steps</h5>
+            <p>In Checkpoint 3, we'll add:</p>
+            <ul class="mb-0">
+                <li>Groq API integration for real AI responses</li>
+                <li>Environment variables for API keys</li>
+                <li>Error handling</li>
+            </ul>
+        </div>
+    </div>
+</div>
+{% endblock %}
