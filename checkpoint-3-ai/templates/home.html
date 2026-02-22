@@ -1,0 +1,65 @@
+{% extends "base.html" %}
+
+{% block title %}Home - AI Content Analyzer{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-8 mx-auto">
+        <!-- Hero Section -->
+        <div class="card shadow-lg mt-5">
+            <div class="card-body text-center p-5">
+                <h1 class="display-4 mb-4">🤖 AI Content Analyzer</h1>
+                <p class="lead mb-4">Get intelligent responses powered by Groq's lightning-fast AI</p>
+                <a href="/chat" class="btn btn-primary btn-lg">Start Chatting →</a>
+            </div>
+        </div>
+
+        <!-- Features Section -->
+        <div class="row mt-5">
+            <div class="col-md-4 mb-3">
+                <div class="card text-center h-100 shadow-sm">
+                    <div class="card-body">
+                        <h2 class="mb-3">⚡</h2>
+                        <h5 class="card-title">Lightning Fast</h5>
+                        <p class="card-text">Powered by Groq's fastest AI models</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="card text-center h-100 shadow-sm">
+                    <div class="card-body">
+                        <h2 class="mb-3">🧠</h2>
+                        <h5 class="card-title">Intelligent</h5>
+                        <p class="card-text">Using Llama 3.3 70B model</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="card text-center h-100 shadow-sm">
+                    <div class="card-body">
+                        <h2 class="mb-3">🎯</h2>
+                        <h5 class="card-title">Accurate</h5>
+                        <p class="card-text">Clear, helpful responses every time</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Demo Section -->
+        <div class="card mt-5 shadow-sm">
+            <div class="card-header bg-success text-white">
+                <h5 class="mb-0">✨ Try These Questions</h5>
+            </div>
+            <div class="card-body">
+                <ul class="mb-0">
+                    <li>"Explain machine learning in simple terms"</li>
+                    <li>"What is Flask and why should I use it?"</li>
+                    <li>"Write a Python function to calculate factorial"</li>
+                    <li>"What's the difference between GET and POST requests?"</li>
+                    <li>"How do neural networks work?"</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

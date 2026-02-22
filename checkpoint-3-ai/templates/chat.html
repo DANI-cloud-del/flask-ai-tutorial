@@ -1,0 +1,74 @@
+{% extends "base.html" %}
+
+{% block title %}Chat - AI Content Analyzer{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-8 mx-auto">
+        <h2 class="mb-4">💬 Chat with AI</h2>
+        
+        <!-- Chat Form -->
+        <div class="card shadow mb-4">
+            <div class="card-body">
+                <form method="POST" action="/chat">
+                    <div class="mb-3">
+                        <label for="question" class="form-label fw-bold">Ask your question:</label>
+                        <textarea class="form-control" 
+                                  id="question" 
+                                  name="question" 
+                                  rows="4" 
+                                  placeholder="What would you like to know?" 
+                                  required
+                                  autofocus></textarea>
+                        <div class="form-text">
+                            Tip: Be specific for better answers. The AI supports markdown formatting!
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">
+                        <span>Send Question</span> 🚀
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Display Response -->
+        {% if response %}
+        <div class="card shadow mb-4">
+            <div class="card-header bg-primary text-white">
+                <strong>💬 Your Question</strong>
+            </div>
+            <div class="card-body">
+                <p class="mb-0 fst-italic">{{ question }}</p>
+            </div>
+        </div>
+
+        <div class="card shadow mb-4">
+            <div class="card-header bg-success text-white">
+                <strong>🤖 AI Response</strong>
+            </div>
+            <div class="card-body ai-response">
+                {{ response|safe }}
+            </div>
+        </div>
+
+        <div class="text-center mb-4">
+            <a href="/chat" class="btn btn-outline-primary">Ask Another Question</a>
+        </div>
+        {% endif %}
+
+        <!-- Info Alert -->
+        {% if not response %}
+        <div class="alert alert-info" role="alert">
+            <h6 class="alert-heading">💡 How It Works</h6>
+            <ol class="mb-0">
+                <li>Type your question in the form above</li>
+                <li>Click "Send Question"</li>
+                <li>Your question is sent to Groq's AI (Llama 3.3 70B)</li>
+                <li>AI processes and generates a response</li>
+                <li>Response is displayed below with markdown formatting</li>
+            </ol>
+        </div>
+        {% endif %}
+    </div>
+</div>
+{% endblock %}
