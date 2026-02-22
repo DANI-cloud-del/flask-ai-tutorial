@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+
+{% block title %}About - AI Content Analyzer{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-8 mx-auto">
+        <h2 class="mb-4">About This Project</h2>
+        
+        <div class="card shadow mb-4">
+            <div class="card-body">
+                <h5 class="card-title">What We've Learned</h5>
+                <p class="card-text">In this checkpoint, we've added:</p>
+                <ul>
+                    <li>Bootstrap 5 for professional styling</li>
+                    <li>Template inheritance with base.html</li>
+                    <li>Responsive navigation bar</li>
+                    <li>Card components for content organization</li>
+                    <li>Bootstrap utility classes (spacing, colors, shadows)</li>
+                    <li>Mobile-responsive grid system</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="card shadow mb-4">
+            <div class="card-body">
+                <h5 class="card-title">Technologies Used</h5>
+                <div class="row">
+                    <div class="col-md-6">
+                        <h6>Backend</h6>
+                        <ul>
+                            <li>Python 3.x</li>
+                            <li>Flask web framework</li>
+                            <li>Jinja2 templating</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <h6>Frontend</h6>
+                        <ul>
+                            <li>Bootstrap 5</li>
+                            <li>HTML5</li>
+                            <li>Responsive design</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="alert alert-success" role="alert">
+            <h5 class="alert-heading">Next Steps</h5>
+            <p>In Checkpoint 2, we'll add:</p>
+            <ul class="mb-0">
+                <li>Forms for user input</li>
+                <li>POST request handling</li>
+                <li>Form validation</li>
+            </ul>
+        </div>
+    </div>
+</div>
+{% endblock %}
