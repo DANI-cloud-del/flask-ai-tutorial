@@ -1,0 +1,92 @@
+{% extends "base.html" %}
+
+{% block title %}Home - AI Content Analyzer{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-8 mx-auto">
+        <!-- Hero Section -->
+        <div class="card shadow-lg mt-5">
+            <div class="card-body text-center p-5">
+                <h1 class="display-4 mb-4">🤖 AI Content Analyzer</h1>
+                <p class="lead mb-4">Your complete AI chat application with conversation history</p>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+                    <a href="/chat" class="btn btn-primary btn-lg">Start Chatting →</a>
+                    <a href="/history" class="btn btn-outline-primary btn-lg">View History</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Features Section -->
+        <div class="row mt-5">
+            <div class="col-md-3 mb-3">
+                <div class="card text-center h-100 shadow-sm">
+                    <div class="card-body">
+                        <h2 class="mb-3">⚡</h2>
+                        <h6 class="card-title">Fast AI</h6>
+                        <p class="card-text small">Groq-powered responses</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-3">
+                <div class="card text-center h-100 shadow-sm">
+                    <div class="card-body">
+                        <h2 class="mb-3">💾</h2>
+                        <h6 class="card-title">History Saved</h6>
+                        <p class="card-text small">All conversations stored</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-3">
+                <div class="card text-center h-100 shadow-sm">
+                    <div class="card-body">
+                        <h2 class="mb-3">🔒</h2>
+                        <h6 class="card-title">Secure</h6>
+                        <p class="card-text small">Local database storage</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-3">
+                <div class="card text-center h-100 shadow-sm">
+                    <div class="card-body">
+                        <h2 class="mb-3">🎯</h2>
+                        <h6 class="card-title">Complete</h6>
+                        <p class="card-text small">Full-stack app ready!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- What You've Built -->
+        <div class="card mt-5 shadow-sm">
+            <div class="card-header bg-success text-white">
+                <h5 class="mb-0">🎉 Congratulations! You've Built:</h5>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h6>Backend Features</h6>
+                        <ul>
+                            <li>Flask web server</li>
+                            <li>Groq AI integration</li>
+                            <li>SQLite database</li>
+                            <li>Environment variables</li>
+                            <li>Error handling</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <h6>Frontend Features</h6>
+                        <ul>
+                            <li>Bootstrap styling</li>
+                            <li>Responsive design</li>
+                            <li>Form handling</li>
+                            <li>Template inheritance</li>
+                            <li>Markdown rendering</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

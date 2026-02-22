@@ -1,0 +1,124 @@
+{% extends "base.html" %}
+
+{% block title %}About - AI Content Analyzer{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-8 mx-auto">
+        <h2 class="mb-4">About This Project</h2>
+        
+        <div class="alert alert-success" role="alert">
+            <h4 class="alert-heading">🎉 Checkpoint 4 Complete!</h4>
+            <p>You've successfully built a full-stack AI application with all features!</p>
+        </div>
+        
+        <div class="card shadow mb-4">
+            <div class="card-body">
+                <h5 class="card-title">Complete Feature List</h5>
+                <div class="row">
+                    <div class="col-md-6">
+                        <h6>💻 Backend</h6>
+                        <ul>
+                            <li>Flask web framework</li>
+                            <li>Groq AI API integration</li>
+                            <li>SQLite database</li>
+                            <li>SQLAlchemy ORM</li>
+                            <li>Environment variables</li>
+                            <li>Error handling</li>
+                            <li>Markdown rendering</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <h6>🎨 Frontend</h6>
+                        <ul>
+                            <li>Bootstrap 5 styling</li>
+                            <li>Responsive design</li>
+                            <li>Template inheritance</li>
+                            <li>Form handling</li>
+                            <li>Conditional rendering</li>
+                            <li>Custom CSS styling</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card shadow mb-4">
+            <div class="card-body">
+                <h5 class="card-title">Database Schema</h5>
+                <pre><code>Table: chat_history
+- id (Integer, Primary Key)
+- question (Text)
+- response (Text)
+- model_used (String)
+- timestamp (DateTime)</code></pre>
+            </div>
+        </div>
+
+        <div class="card shadow mb-4">
+            <div class="card-body">
+                <h5 class="card-title">What You've Learned</h5>
+                <ol>
+                    <li>Setting up Flask applications</li>
+                    <li>Using Bootstrap for UI design</li>
+                    <li>Handling forms and POST requests</li>
+                    <li>Integrating external APIs (Groq)</li>
+                    <li>Database design and queries</li>
+                    <li>Environment variable management</li>
+                    <li>Template engines (Jinja2)</li>
+                    <li>Error handling and debugging</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="card shadow mb-4 border-success">
+            <div class="card-header bg-success text-white">
+                <h5 class="mb-0">🚀 Ready for Deployment!</h5>
+            </div>
+            <div class="card-body">
+                <p>Your app is production-ready. Next steps:</p>
+                <ol>
+                    <li>Push code to GitHub</li>
+                    <li>Deploy to Render/PythonAnywhere</li>
+                    <li>Share your live URL!</li>
+                </ol>
+                <p class="mb-0">See the main README for deployment instructions.</p>
+            </div>
+        </div>
+
+        <div class="card shadow mb-4">
+            <div class="card-body">
+                <h5 class="card-title">Tech Stack Summary</h5>
+                <table class="table">
+                    <tbody>
+                        <tr>
+                            <td><strong>Language</strong></td>
+                            <td>Python 3.x</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Web Framework</strong></td>
+                            <td>Flask 3.0</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Database</strong></td>
+                            <td>SQLite + SQLAlchemy</td>
+                        </tr>
+                        <tr>
+                            <td><strong>AI API</strong></td>
+                            <td>Groq (Llama 3.3 70B)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Frontend</strong></td>
+                            <td>Bootstrap 5 + HTML5</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Templating</strong></td>
+                            <td>Jinja2</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
